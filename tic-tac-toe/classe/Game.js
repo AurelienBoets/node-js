@@ -161,7 +161,7 @@ class Game {
   }
 
   isDraw() {
-    if (this.tab.every((element) => element === "")) {
+    if (this.tab.every((element) => element.value !== "")) {
       console.log("Match nul");
       return true;
     }
