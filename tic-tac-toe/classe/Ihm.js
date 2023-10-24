@@ -80,8 +80,7 @@ class Ihm {
       await this.selectPosition();
       if (this.game.isWinning()) {
         this.run = false;
-      }
-      if (this.game.isDraw() && this.run === false) {
+      } else if (this.game.isDraw()) {
         this.run = false;
       }
     }
