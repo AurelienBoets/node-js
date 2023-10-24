@@ -81,7 +81,7 @@ class Ihm {
       if (this.game.isWinning()) {
         this.run = false;
       }
-      if (this.game.isDraw()) {
+      if (this.game.isDraw() && this.run === false) {
         this.run = false;
       }
     }
